@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>HTML</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width"/>
+<link rel="stylesheet" href="/css/reset.css"/>
+<!-- syntax highlighting CSS -->
+<link rel="stylesheet" href="/css/syntax.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link rel="apple-touch-icon" href="img/touchicon.png"/>
+
+<script type="text/javascript">
+var dolly = [
+"Hello, Dolly",
+"Well, hello, Dolly",
+"It's so nice to have you back where you belong",
+"You're lookin' swell, Dolly",
+"I can tell, Dolly",
+"You're still glowin', you're still crowin'",
+"You're still goin' strong",
+"We feel the room swayin'",
+"While the band's playin'",
+"One of your old favourite songs from way back when",
+"So, take her wrap, fellas",
+"Find her an empty lap, fellas",
+"Dolly'll never go away again",
+"Hello, Dolly",
+"Well, hello, Dolly",
+"It's so nice to have you back where you belong",
+"You're lookin' swell, Dolly",
+"I can tell, Dolly",
+"You're still glowin', you're still crowin'",
+"You're still goin' strong",
+"We feel the room swayin'",
+"While the band's playin'",
+"One of your old favourite songs from way back when",
+"Golly, gee, fellas",
+"Find her a vacant knee, fellas",
+"Dolly'll never go away",
+"Dolly'll never go away",
+"Dolly'll never go away again"
+];
+
+window.onload = function() {
+    var randomDolly = dolly[Math.floor(Math.random() * dolly.length)];
+    var oSc = document.getElementById("sc");
+    var oI = document.getElementsByTagName("i")[0];
+
+    oI.innerHTML = randomDolly;
+};
+
+</script>
+
+</head>
+<body>
+<div class="container f-cb">
+    <div class="aside">
+        <h1 class="header">
+        	<span class="site-desc">Just 前端开发一枚</span>
+        	<a href="/">
+        		<span class="site-name">Ho's blog</span>
+        	</a>
+        </h1>
+        <div class="func-item nav">
+        	<h4 class="sub-title">导航</h4>
+        	<ul class="list-items f-cb">
+        		<li>
+        			<a href="/" class="active">{首页}</a>
+        		</li>
+        		<li>
+        			<a href="/nav/archive">{归档}</a>
+        		</li>
+        		<li>
+        			<a href="/nav/about">{简历}</a>
+        		</li>
+        		<li>
+        			<a href="/nav/contact">{联系}</a>
+        		</li>
+        	</ul>
+        </div>
+        <div class="func-item new-posts">
+        	<h4 class="sub-title">最新文章</h4>
+        	<ul class="list-items">
+			
+        		<li class="f-pre">
+        			<a href="/all/javascript/2014/03/23/the-use-of-ajax.html">ajax 的基本使用</a>
+        		</li>
+			
+        		<li class="f-pre">
+        			<a href="/all/css/2014/03/23/ie6-double-margin-bug.html">IE6浮动产生双边距</a>
+        		</li>
+			
+        	</ul>
+        </div>
+        <div class="func-item archive">
+        	<h4 class="sub-title">文章分类</h4>
+        	<ul class="list-items">
+			
+        		<li>
+        			<a href="/sort/JavaScript" title="JavaScript">JavaScript</a>
+        			<span>(1)</span>
+        		</li>
+			
+        		<li>
+        			<a href="/sort/HTML" title="HTML">HTML</a>
+        			<span>(0)</span>
+        		</li>
+			
+        		<li>
+        			<a href="/sort/CSS" title="CSS">CSS</a>
+        			<span>(1)</span>
+        		</li>
+			
+        		<li>
+        			<a href="/sort/MySQL" title="MySQL">MySQL</a>
+        			<span>(0)</span>
+        		</li>
+			
+        		<li>
+        			<a href="/sort/Linux" title="Linux">Linux</a>
+        			<span>(0)</span>
+        		</li>
+			
+        	</ul>
+        </div>
+        <div class="func-item tags">
+        	<h4 class="sub-title">标签云</h4>
+        	<ul class="list-items f-cb">
+        		
+        		<li>
+        			<a href="/tags/JavaScript" title="JavaScript">JavaScript</a>
+        		</li>
+			
+        		<li>
+        			<a href="/tags/HTML5" title="HTML5">HTML5</a>
+        		</li>
+			
+        		<li>
+        			<a href="/tags/CSS3" title="CSS3">CSS3</a>
+        		</li>
+			
+        		<li>
+        			<a href="/tags/MySQL" title="MySQL">MySQL</a>
+        		</li>
+			
+        		<li>
+        			<a href="/tags/Linux" title="Linux">Linux</a>
+        		</li>
+			
+        		<li>
+        			<a href="/tags/Bug" title="Bug">Bug</a>
+        		</li>
+			
+        		<li>
+        			<a href="/tags/IE6" title="IE6">IE6</a>
+        		</li>
+			
+        	</ul>
+        </div>
+        <p>个人博客，主要用于记录个人学习笔记，复习及备忘。同时也会转载一个网络上的技术文章，以便更好的学习。</p>
+        <p>
+        	Power by 
+        	<a href="http://jekyllrb.com/" target="_blank">Jekyll.</a>　
+        	Host by 
+        	<a href="http://github.com/" target="_blank">GitHub.</a>
+        </p>
+    </div>
+    <div class="article">
+		<div class="main">
+			<h6>sort &raquo; HTML</h6>
+
+
+
+		</div>
+        <div class="footer"></div>
+    </div>
+</div>
+</body>
+</html>

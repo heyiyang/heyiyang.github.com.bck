@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>{{ page.title }}</title>
+<meta name="keywords" content=""/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width"/>
+<link rel="stylesheet" href="/css/reset.css"/>
+<!-- syntax highlighting CSS -->
+<link rel="stylesheet" href="/css/syntax.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="shortcut icon" href="img/favicon.ico"/>
+<link rel="apple-touch-icon" href="img/touchicon.png"/>
+
+<script type="text/javascript">
+var dolly = [
+"Hello, Dolly",
+"Well, hello, Dolly",
+"It's so nice to have you back where you belong",
+"You're lookin' swell, Dolly",
+"I can tell, Dolly",
+"You're still glowin', you're still crowin'",
+"You're still goin' strong",
+"We feel the room swayin'",
+"While the band's playin'",
+"One of your old favourite songs from way back when",
+"So, take her wrap, fellas",
+"Find her an empty lap, fellas",
+"Dolly'll never go away again",
+"Hello, Dolly",
+"Well, hello, Dolly",
+"It's so nice to have you back where you belong",
+"You're lookin' swell, Dolly",
+"I can tell, Dolly",
+"You're still glowin', you're still crowin'",
+"You're still goin' strong",
+"We feel the room swayin'",
+"While the band's playin'",
+"One of your old favourite songs from way back when",
+"Golly, gee, fellas",
+"Find her a vacant knee, fellas",
+"Dolly'll never go away",
+"Dolly'll never go away",
+"Dolly'll never go away again"
+];
+
+window.onload = function() {
+    var randomDolly = dolly[Math.floor(Math.random() * dolly.length)];
+    var oSc = document.getElementById("sc");
+    var oI = document.getElementsByTagName("i")[0];
+
+    oI.innerHTML = randomDolly;
+};
+
+</script>
+
+</head>
+<body>
+<div class="container f-cb">
+    <div class="aside">
+        <h1 class="header">
+        	<span class="site-desc">Just 前端开发一枚</span>
+        	<a href="/">
+        		<span class="site-name">{{ site.name }}</span>
+        	</a>
+        </h1>
+        <div class="func-item nav">
+        	<h4 class="sub-title">导航</h4>
+        	<ul class="list-items f-cb">
+        		<li>
+        			<a href="/" class="active">{首页}</a>
+        		</li>
+        		<li>
+        			<a href="/nav/archive">{归档}</a>
+        		</li>
+        		<li>
+        			<a href="/nav/about">{简历}</a>
+        		</li>
+        		<li>
+        			<a href="/nav/contact">{联系}</a>
+        		</li>
+        	</ul>
+        </div>
+        <div class="func-item new-posts">
+        	<h4 class="sub-title">最新文章</h4>
+        	<ul class="list-items">
+			{% for post in site.posts limit:5 %}
+        		<li class="f-pre">
+        			<a href="{{ post.url }}">{{ post.title }}</a>
+        		</li>
+			{% endfor %}
+        	</ul>
+        </div>
+        <div class="func-item archive">
+        	<h4 class="sub-title">文章分类</h4>
+        	<ul class="list-items">
+			{% for item in site.data.sort %}
+        		<li>
+        			<a href="/sort/{{ item.sortName }}" title="{{ item.sortName }}">{{ item.sortName }}</a>
+        			<span>({{ item.sortNum }})</span>
+        		</li>
+			{% endfor %}
+        	</ul>
+        </div>
+        <div class="func-item tags">
+        	<h4 class="sub-title">标签云</h4>
+        	<ul class="list-items f-cb">
+        		{% for item in site.data.tags %}
+        		<li>
+        			<a href="/tags/{{ item.tagName }}" title="{{ item.tagName }}">{{ item.tagName }}</a>
+        		</li>
+			{% endfor %}
+        	</ul>
+        </div>
+        <p>个人博客，主要用于记录个人学习笔记，复习及备忘。同时也会转载一个网络上的技术文章，以便更好的学习。</p>
+        <p>
+        	Power by 
+        	<a href="http://jekyllrb.com/" target="_blank">Jekyll.</a>　
+        	Host by 
+        	<a href="http://github.com/" target="_blank">GitHub.</a>
+        </p>
+    </div>
+    <div class="article">
+		<div class="main">
+			{{ content }}
+		</div>
+        <div class="footer"></div>
+    </div>
+</div>
+</body>
+</html>

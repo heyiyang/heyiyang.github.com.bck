@@ -1,0 +1,38 @@
+---
+layout: post
+title:  "Welcome to Jekyll!"
+date:   2014-03-23 23:09:28
+categories: jekyll update
+tags: [me]
+---
+
+ajax其实是个很简单的东西，来来去去就是那一套。他实现的功能是什么呢？举一个例子：在用户登陆的时候，用户输入了用户名和密码，然后点击登录按钮。此时，内部发生了什么事情呢? 先把用户输入的数据通过后台和数据库进行检验，看用户名和密码是否匹配。如果匹配，则登录。如果不匹配。则调用javascript中的函数，提示用户密码错误。这里实质是点击一个按钮，同时进行了javascript的处理和后台的处理。
+
+其实，ajax做的就是这样一类事情：触发事件，同时调用javascript函数和后台处理。（这个其实就是所说的异步刷新、部分刷新的本质）
+
+理解了ajax在干一件什么样的事情，那么我们就来看看如何使用。其实，ajax的使用已经是一种套路的东西。看懂了下面的例子，便可以举一反三，灵活运用。（使用PHP后台脚本）
+
+上面的url中！期中test.php可以理解为你后台处理的那个页面（文件名），这个url一共有三个参数，userName age 和 gender  他们的赋值用等号赋值，跟在文件名后的第一个参数名前加“?”，后面的加“&”。
+
+Jekyll also offers powerful support for code snippets:
+
+{% highlight ruby linenos %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+{% highlight javascript linenos %}
+window.onload = function() {
+  alert("asdf");  // asdf;
+}
+{% endhighlight %}
+
+Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+
+[jekyll-gh]: https://github.com/mojombo/jekyll
+[jekyll]:    http://jekyllrb.com
+
+推荐阅读：[welcome to jekyll]({% post_url 2014-03-23-welcome-to-jekyll-3 %})

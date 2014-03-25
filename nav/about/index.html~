@@ -1,0 +1,13 @@
+---
+layout: default
+title: about
+---
+
+<h2>about</h2>
+<p class="meta">时间: 2014 03 25</p>
+<div class="contents">
+  {% include right-side-plugin.html %}
+</div>
+<div class="post">
+  <p>undo!</p>
+</div>

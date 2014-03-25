@@ -1,0 +1,15 @@
+- sortName: JavaScript
+  sortNum: 1
+
+- sortName: HTML
+  sortNum: 2
+
+- sortName: CSS
+  sortNum: 7
+
+- sortName: MySQL
+  sortNum: 5
+
+- sortName: Linux
+  sortNum: 3
+

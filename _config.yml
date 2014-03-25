@@ -1,0 +1,6 @@
+name: Ho's blog
+markdown: redcarpet
+pygments: true
+paginate_path: 'page:num'
+paginate: 5
+
