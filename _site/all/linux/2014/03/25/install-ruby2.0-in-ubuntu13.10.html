@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8"/>
-<title>IE6</title>
+<title>Ubuntu13.10 下安装 ruby2.0</title>
 <meta name="keywords" content=""/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width"/>
@@ -185,15 +185,57 @@ window.onload = function() {
     </div>
     <div class="article">
 		<div class="main">
-			<h6>tag &raquo; IE6</h6>
+			<h2>Ubuntu13.10 下安装 ruby2.0</h2>
+<p class="meta">发表时间 25 Mar 2014</p>
+<div class="contents">
+  <!-- 
+<h5>In this Lesson</h5>
+<h6>HTML</h6>
+<ul>
+  <li>
+    <a href="#">Common Terms</a>
+  </li>
+  <li>
+    <a href="#">Common Terms</a>
+  </li>
+</ul>
+-->
 
-<h2><a href="/all/css/2014/03/24/ie6-double-margin-bug.html">IE6浮动产生双边距</a></h2>
-<div class="post item">
-<p>在一个容器里面放入多个并行排列的容器是我们在作新闻列表或者图片列表中常用的办法，通常是算好大小，设置好MARGIN的距离，然后使用float 即可实现。这是非常简单有效的代码，但是偏偏IE6会出现错位的现象，Firefox和IE7 IE8都没问题。这个IE6的问题就是通常说的：IE6浮动产生双边距的BUG</p>
+<p id="sc" class="sayingContent">"<i>One of your old favourite songs from way back when</i>"</p>
+<span id="sa" class="sayingAuthor">-- Hello Dolly</span>
 
 </div>
-<p class="meta metaline">时间: 24 Mar 2014</p>
+<div class="post">
+<p>在 Ubuntu13.10 的终端下执行以下命令安装 ruby2.0</p>
 
+<div class="highlight"><pre><code class="bash"><span class="lineno">1</span> sudo apt-get update
+<span class="lineno">2</span> sudo apt-get install ruby2.0 ruby2.0-dev build-essential libssl-dev zlib1g-dev ruby-switch
+</code></pre></div>
+
+<p>将 ruby2.0 设置为默认值</p>
+
+<div class="highlight"><pre><code class="bash"><span class="lineno">1</span> sudo ruby-switch --set ruby2.0
+</code></pre></div>
+
+<p>安装并设置默认值后，执行以下命令查询 ruby 的版本</p>
+
+<div class="highlight"><pre><code class="bash"><span class="lineno">1</span> ruby --version
+</code></pre></div>
+
+</div>
+
+<div class="related">
+  <h5>相关阅读：</h5>
+  <ul>
+    
+    <li><a href="/all/css/2014/03/25/css-layout.html">css 定宽自适应布局</a></li>
+    
+    <li><a href="/all/linux/2014/03/24/useful-cmd-for-vi.html">vi文本编辑常用命令</a></li>
+    
+    <li><a href="/all/javascript/2014/03/24/the-use-of-ajax.html">ajax 的基本使用</a></li>
+    
+  </ul>
+</div>
 
 		</div>
         <div class="footer"></div>
