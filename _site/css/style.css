@@ -88,7 +88,7 @@ body { font: 14px/20px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", "A
 .article .contents span { float: right; margin: 0 0 20px 0; }
 
 /* related_posts */
-.article .related { background: #fff; padding: 20px; border-left: 4px solid #e8eae9;}
+.article .related { background: #fff; padding: 20px; border-left: 4px solid #e8eae9; margin: 0 0 20px 0; }
 .article .related ul { margin: 10px 0 0 20px; color: #d0d2d5 }
 .article .related ul li { list-style: square; }
 
