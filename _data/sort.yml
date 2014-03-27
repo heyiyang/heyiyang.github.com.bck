@@ -1,11 +1,11 @@
 - sortName: JavaScript
-  sortNum: 1
+  sortNum: 0
 
 - sortName: HTML
   sortNum: 0
 
 - sortName: CSS
-  sortNum: 2
+  sortNum: 1
 
 - sortName: MySQL
   sortNum: 0
