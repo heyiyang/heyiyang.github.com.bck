@@ -1,10 +1,10 @@
+html { }
+body { font: 14px/20px "Microsoft YaHei", "微软雅黑", "SimSun", "宋体", "Arial Narrow", HELVETICA; background: url(../images/bg.jpg); text-shadow: 0 1px 0 #fff; }
+
 /* function */
 .f-cb:after{display:block;clear:both;visibility:hidden;height:0;overflow:hidden;content:".";}
 .f-cb{zoom:1;}
 .f-pre{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-
-html { }
-body { font: 14px/20px "Droid Sans",Arial,"Helvetica Neue","Lucida Grande",sans-serif; background: url(../images/bg.jpg); text-shadow: 0 1px 0 #fff; }
 
 /* grid */
 .container { width: 970px; }
