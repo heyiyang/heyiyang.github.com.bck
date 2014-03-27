@@ -6,7 +6,7 @@ tags: [Ubuntu, Linux, Ruby]
 
 在 Ubuntu13.10 的终端下执行以下命令安装 ruby2.0
 
-{% highlight bash linenos %}
+{% highlight bash %}
 sudo apt-get update
 sudo apt-get install ruby2.0 ruby2.0-dev build-essential libssl-dev zlib1g-dev ruby-switch
 {% endhighlight %}
