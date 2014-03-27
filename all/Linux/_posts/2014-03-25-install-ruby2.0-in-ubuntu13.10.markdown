@@ -13,12 +13,12 @@ sudo apt-get install ruby2.0 ruby2.0-dev build-essential libssl-dev zlib1g-dev r
 
 将 ruby2.0 设置为默认值
 
-{% highlight bash linenos %}
+{% highlight bash %}
 sudo ruby-switch --set ruby2.0
 {% endhighlight %}
 
 安装并设置默认值后，执行以下命令查询 ruby 的版本
 
-{% highlight bash linenos %}
+{% highlight bash %}
 ruby --version
 {% endhighlight %}
